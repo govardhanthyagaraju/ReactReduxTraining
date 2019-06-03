@@ -1,0 +1,26 @@
+[
+    {
+        "menuText": "Home",
+        "menuLink": "/"
+    },
+    {
+        "menuText": "Products",
+        "menuLink": "/products"
+    },
+    {
+        "menuText": "Checkout",
+        "menuLink": "/checkout/54565?name=abc"
+    },
+    {
+        "menuText": "Cart",
+        "menuLink": "/cart"
+    },
+    {
+        "menuText": "404 Page",
+        "menuLink": "/error"
+    },
+    {
+        "menuText": "Login",
+        "menuLink": "/login"
+    }
+]

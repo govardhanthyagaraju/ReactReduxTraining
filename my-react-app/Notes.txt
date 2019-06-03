@@ -1,0 +1,96 @@
+//SMART Component - Logical Representation
+//Dumb Component - Presentation
+
+Information Exchange from Parent to Child is using props
+Child reads the data using this.Props (default keyword from React JS)
+
+APP
+    Currency
+    ProductList
+        Product: required
+
+Class based component : stateful component ---> SMART
+Functional: stateless component ---> DUMB
+
+Controlled and Uncontrolled components
+static type checking of props
+Routing 
+
+
+Solution Structure
+_____________________
+source
+    components
+    containers
+    core (for core services) Eg: Service Calls
+    shared: shared resources (common component)
+
+OR
+
+source
+    feature1
+        components
+        containers
+        services
+    feature2
+        components
+        containers
+        services
+    core (for core services) Eg: Service Calls
+    shared
+        components
+
+Screen Design
+_____________________
+
+APP
+    Header > Menu > Currency
+    MAIN > Router > ProductList
+    Footer
+
+Src
+   ui 
+     component
+        Header.jsx
+        Footer.jsx
+        Menu.jsx
+
+Router Provides 3 Object for Navigation
+________________________________________________
+
+1.history Object is used for Navigation
+2.match Object for passing Params: Two techniques
+    1. Rest Parameters: abc.com/product/123    
+3.location used for Query Parameters
+    2. Query Parameters: abc.com/product?pid=123
+
+
+Redux: Is a library which impliments flux 
+
+npm install redux -S
+npm install react-redux -S
+
+1. Defining all the actions
+    actions are functions which return a dispatcher objects
+2. Defining reducer for all the actions declared in step 1
+    reducer is a finctions which evaluates the types of dispatcher object & returns
+    this updated state to the store
+3. Creating a store using a reducers from step 2
+4. Providing the store to the App
+5. Connecting the components to the store to update/retrieve the data from store
+
+src
+   _store    
+        actions
+            currencyActions.js
+            cartActions.js
+        reducers
+        index.js
+
+Hooks from React version 16.8  --> State mgmt for child or functional components
+Routing: Authorization
+    containers  
+        Login.jsx
+HOC: Higher order components
+Middlewares in redux: Support Async Action and Provide and dispatch object inside the actions
+
